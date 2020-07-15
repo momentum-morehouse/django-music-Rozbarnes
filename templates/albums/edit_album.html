@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Edit Contact</h1>
+<h1>Edit Albums</h1>
 
 <div>
-  <form action="{% url 'edit_contact' pk=contact.pk %}" method="POST">
+  <form action="{% url 'edit_album' pk=contact.pk %}" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <div>
-      <button type="submit">Update Contact</button>
+      <button type="submit">Update Albums</button>
     </div>
   </form>
 </div>

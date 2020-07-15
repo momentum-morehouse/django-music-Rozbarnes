@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.conf import settings
 from django.urls import include, path
+from mymusic import views as album_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    #albums is our 'index' is for our homepage, standard
+    path('', album_views.index, name='home'),
+    #path('add_album', album_views.add_album, name='add_album'), 
+    #path('albums/<int:pk>/delete/', album_views.delete_albums, name='delete_album',
 ]
 
 if settings.DEBUG:
