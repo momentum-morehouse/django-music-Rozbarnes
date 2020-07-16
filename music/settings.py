@@ -22,7 +22,6 @@ environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / ...
 BASE_DIR = Path(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -31,7 +30,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['django-music-rozbarnes--rozbarnes.repl.co', 'django-music-rozbarnes.rozbarnes.repl.co']
 
@@ -123,16 +122,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
+
 #STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
-# Custom user model
+#Custom user model
 
 AUTH_USER_MODEL = 'users.User'
 
