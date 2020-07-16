@@ -6,11 +6,10 @@
 
 <div class="flex flex-wrap">
   {% for album in albums %}
+
   <div class="w-33 pa3">
     <h2>{{ album.title }}</h2>
-
-
-
+    <img src="{{ album.image_url }}" height="350" width="350">
     {% if album.artist %}
     <div class="flex">
       <div class="pr2"></div>
@@ -22,6 +21,7 @@
     <div class="flex">
       <div class="pr2"></div>
       <div>{{ album.released }}</div>
+      
     </div>
     {% endif %}
 

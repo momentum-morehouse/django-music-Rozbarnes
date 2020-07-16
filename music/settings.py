@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['django-music-rozbarnes--rozbarnes.repl.co', 'django-music-rozb
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

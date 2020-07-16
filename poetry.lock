@@ -59,6 +59,14 @@ six = ">=1.2"
 
 [[package]]
 category = "main"
+description = "An extensible user-registration application for Django"
+name = "django-registration-redux"
+optional = false
+python-versions = "*"
+version = "2.8"
+
+[[package]]
+category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -94,7 +102,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "e0c20bbc6cc03d4411eac8b4def35b2e99fe390b54cea1707e90cde7092291fb"
+content-hash = "95eac7291a98e429240a9941c82832c5a319fa1c094cd94da78bc185c1c77600"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -117,6 +125,10 @@ django-environ = [
 django-extensions = [
     {file = "django-extensions-2.2.9.tar.gz", hash = "sha256:2f81b618ba4d1b0e58603e25012e5c74f88a4b706e0022a3b21f24f0322a6ce6"},
     {file = "django_extensions-2.2.9-py2.py3-none-any.whl", hash = "sha256:b19182d101a441fe001c5753553a901e2ef3ff60e8fbbe38881eb4a61fdd17c4"},
+]
+django-registration-redux = [
+    {file = "django-registration-redux-2.8.tar.gz", hash = "sha256:ed525f393c452d3f5044148131cafbf50da7bdec9f78b594450bf01ad67085d4"},
+    {file = "django_registration_redux-2.8-py2.py3-none-any.whl", hash = "sha256:ed1ead5398e48bdc37064ab1e269b49301765701984e8d956a641aad2ff3a3ca"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
