@@ -7,7 +7,12 @@ class Album(models.Model):
     released = models.DateField(null=True,blank=True)
     image_url = models.TextField(null= True, blank=True)
 
-    def __str__(self):
+class Detail(models.Model):
+  detail = models.ForeignKey(Album, on_delete=models.CASCADE, related_name="detail")
+  text = models.TextField(null=True, blank=True)
+  date_added = models.DateTimeField(auto_now_add=True)
+
+def __str__(self):
         return f"{self.title} by {self.artist}"
 
 class Users(models.Model):
