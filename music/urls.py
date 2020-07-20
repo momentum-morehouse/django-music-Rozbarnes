@@ -23,8 +23,11 @@ urlpatterns = [
 
     #albums is our 'index' is for our homepage, standard
     path('', album_views.index, name='home'),
-    path('mymusic/add/', album_views.add_album, name='add_album'), 
-    #path('albums/<int:pk>/delete/',album_views.delete_albums, name='delete_album')
+    path('albums/add/', album_views.add_album, name='add_album'),
+    
+    path('albums/<int:pk>/edit/',album_views.edit_album, name='edit_album'), 
+
+    path('albums/<int:pk>/delete/',album_views.delete_album, name='delete_album'),
 ]
 
 if settings.DEBUG:

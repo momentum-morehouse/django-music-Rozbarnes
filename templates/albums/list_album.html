@@ -21,11 +21,13 @@
     <div class="flex">
       <div class="pr2"></div>
       <div>{{ album.released }}</div>
-      
+    <p>
+        <a href="{% url 'edit_album' pk=album.pk %}"> Edit Album</a>
+        <a href="{% url 'delete_album' pk=album.pk %}" >Delete Album</a> 
+    </p>    
     </div>
-    {% endif %}
+    <!-- {% endif %} -->
 
-    
   </div>
   {% endfor %}
 </div>  
